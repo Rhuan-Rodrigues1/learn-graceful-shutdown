@@ -4,7 +4,7 @@
   "description": "Implementando graceful-shutdown em uma api simples para aprendizado",
   "main": "index.ts",
   "scripts": {
-    "dev": "ts-node-dev simple-api/server.ts",
+    "dev": "ts-node-dev cluster-api/index.ts",
     "test": "npx autocannon -c 500 -d 30 --workers 10 --renderStatusCode --latency  --warnup [-c 1 -d 2] localhost:3000"
   },
   "author": "Rhuan-Rodrigues1",
