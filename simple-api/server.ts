@@ -12,7 +12,7 @@ server.listen(3000).once('listening', () => {
 	console.log("Process running in: " + processID)
 })
 
-process.on('SIGINT', () => {
+process.on('SIGTERM', () => {
 	console.log("ending...", new Date().toISOString())
 	server.close()
 })
